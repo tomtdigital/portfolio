@@ -1,6 +1,7 @@
 @import 'config';
 @import 'placeholder';
 @import 'menu';
+@import 'mobile';
 
 * {
     box-sizing: border-box;
@@ -9,7 +10,7 @@
 body {
     @include background;
     background-color: $primary-color;
-    color:#fff;
+    color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -70,5 +71,10 @@ main {
         h1 {
             margin-top: 20vh;
         }
+    }
+
+    &.more-opacity {
+        opacity: 0.1;
+        @include easeOut;
     }
 }
