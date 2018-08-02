@@ -64,7 +64,7 @@
         opacity: 1;
         cursor: pointer; }
     .menu-branding .portrait-cont {
-      transform: rotate(-45deg) translate(-0.5em, -3em);
+      transform: rotate(-45deg) translate(1.5em, -3em);
       background-color: #aacbde; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -73,7 +73,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #dbd24a; }
+      color: #f3d52b; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -83,7 +83,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #dbd24a; }
+      color: #f3d52b; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.05s; }
@@ -96,41 +96,6 @@
 
 .nav-item:nth-child(4) {
   transition-delay: 0.2s; }
-
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-  .menu-branding {
-    height: 35vh;
-    transform: translate3d(100%, 0, 0);
-    background-color: #34383a;
-    opacity: 0.8; }
-    .menu-branding .portrait {
-      width: 10em;
-      height: 10em; }
-      .menu-branding .portrait img {
-        transform: translate(1.3em, 1.5em); }
-  .menu-nav {
-    height: 65vh;
-    transform: translate3d(-100%, 0, 0);
-    margin-bottom: 50px; }
-    .menu-nav .nav-item {
-      transform: translate3d(0, 400%, 0);
-      font-size: 30px; } }
-
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh;
-    font-size: 75px; } }
 
 * {
   box-sizing: border-box; }
@@ -182,17 +147,17 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #dbd24a; }
+  color: #f3d52b; }
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh -60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #dbd24a;
+        color: #f3d52b;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -201,3 +166,76 @@ main {
   main.more-opacity {
     opacity: 0.1;
     transition: all 0.5s ease-out; }
+
+.about-info {
+  display: grid;
+  grid-template-areas: 'bioimg bio bio' 'job1 job2 job3';
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3em; }
+  .about-info .bioportrait {
+    grid-area: bioimg;
+    width: 15em;
+    height: 15em;
+    margin: auto; }
+    .about-info .bioportrait .bioimg {
+      width: 100%;
+      border-radius: 0.5em; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: #404547;
+    padding: 0.5rem;
+    border-bottom: #f3d52b 5px solid; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1c1e1f;
+  color: #fff;
+  height: 60px; }
+
+/*Lets the content load before the media queries*/
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+  .menu-branding {
+    height: 35vh;
+    transform: translate3d(100%, 0, 0);
+    background-color: #34383a;
+    opacity: 0.8; }
+    .menu-branding .portrait {
+      width: 10em;
+      height: 10em; }
+      .menu-branding .portrait img {
+        transform: translate(-0.5em, 1.5em); }
+  .menu-nav {
+    height: 65vh;
+    transform: translate3d(-100%, 0, 0);
+    margin-bottom: 50px; }
+    .menu-nav .nav-item {
+      transform: translate3d(0, 400%, 0);
+      font-size: 30px; }
+  .about-info {
+    grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh;
+    font-size: 75px; } }

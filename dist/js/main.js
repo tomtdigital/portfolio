@@ -4,7 +4,7 @@ const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
-const home = document.querySelector('#home');
+const main = document.querySelector('main');
 const navItems = document.querySelectorAll('.nav-item');
 
 //Set initial state of menu
@@ -19,7 +19,7 @@ function toggleMenu() {
         menu.classList.add('show');
         menuNav.classList.add('show');
         menuBranding.classList.add('show');
-        home.classList.add('more-opacity');
+        main.classList.add('more-opacity');
         navItems.forEach(item => item.classList.add('show'));
         //Set menu state now it's open
         showMenu = true;
@@ -30,7 +30,7 @@ function toggleMenu() {
         menu.classList.remove('show');
         menuNav.classList.remove('show');
         menuBranding.classList.remove('show')
-        home.classList.remove('more-opacity');
+        main.classList.remove('more-opacity');
         navItems.forEach(item => item.classList.remove('show'));
         //You must re-set the menu state or it will stay as 'true' and won't toggle
         showMenu = false;

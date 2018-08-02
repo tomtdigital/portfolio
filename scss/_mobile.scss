@@ -41,7 +41,7 @@
             height: 10em;
 
             img{
-                transform: translate(1.3em, 1.5em);
+                transform: translate(-0.5em, 1.5em);
             }
 
         }
@@ -56,7 +56,16 @@
         }
     }
  
+    .about-info {
+        grid-template-areas:
+        'bioimg'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
 
+        grid-template-columns: 1fr;
+    }
    
 }
 
