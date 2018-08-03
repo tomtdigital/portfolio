@@ -49,11 +49,16 @@ header {
     color: $secondary-color;
 }
 
+.text-tertiary {
+    color: $tertiary-color;
+}
+
 main {
     padding: 4rem;
     //height: 100%;
     //instead, this will  ensure footer is always at the bottom
-    min-height: calc(100vh -60px);
+    min-height: calc(100vh - 60px);
+
     .icons {
         margin-top: 1rem;
 
@@ -78,7 +83,37 @@ main {
         opacity: 0.1;
         @include easeOut;
     }
+
+    
 }
+
+//No image for most menus
+
+#no-pic {
+    .menu-branding{
+        height: 0vh;
+
+    
+        .portrait{
+            visibility: hidden;
+        }
+    }
+
+    .menu-nav{
+        float: right;
+        height: 100vh;
+        
+    }
+}
+
+//Logo in Menu
+
+.logo {
+    width: 5rem;
+}
+
+
+//About Page
 
 .about-info {
     display: grid;
@@ -123,6 +158,10 @@ main {
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
     }
+
+    .menu-branding {
+        visibility: hidden;
+    }
 }
 
 //Work/Projects
@@ -143,6 +182,35 @@ main {
     }
 }
 
+//Contact Page
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 1rem;
+
+    div{
+        font-size: 2rem;
+        border: 3px #fff solid;
+        padding: 1.5rem 2.5rem;
+        margin-bottom: 3rem;
+        @include easeOutFast;
+
+        &:hover {
+            padding: 1.8rem 2.8rem;
+            color: #fff;
+            span {
+                color: $tertiary-color;
+            }
+        }
+    }
+
+}
+
+
+
 //Button Style (separate to projects in case we want to access this elsewhere)
 .btn {
     display: block;
@@ -160,20 +228,13 @@ main {
     @extend .btn;
     background: darken($primary-color, 10);
     color: #fff;
-    &:hover {
-        background: $tertiary-color;
-        color: $secondary-color;
 }
-}
+
 
 .btn-light {
     @extend .btn;
     background: lighten($primary-color, 50);
     color: #000;
-    &:hover {
-        background: $secondary-color;
-        color: $tertiary-color;
-}
 }
 
 #main-footer {

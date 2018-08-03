@@ -12,8 +12,19 @@
 @include mediaLg {
     .projects {
         grid-template-columns: repeat(3, 1fr);
-        
+       
     }
+
+    .about-info {
+        grid-template-areas:
+        'bioimg bio'
+        'job1 job1'
+        'job2 job2' 
+        'job3 job3';
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
 
 //Tablets and Small Laptops
@@ -26,6 +37,7 @@
         .lg-heading {
             line-height: 1;
             margin-bottom: 1rem;
+            font-size: 5rem;
 
         }
     }
@@ -81,14 +93,48 @@
     }
 }
 
+//Awkward middle phases
+
+@include mediaSmMd{
+    
+    #no-pic{
+        .menu-nav{
+            .nav-item{
+                font-size: 3.5em;
+            }
+        }
+    }
+}
+
+@include mediaSmMd2{
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+        
+        }
+    
+    
+    #no-pic{
+        .menu-nav{
+            .nav-item{
+                font-size: 3em;
+            }
+         }
+    }
+}
+
+
 //Smartphones
 
 @include mediaSm {
-    main#home h1 {
-        margin-top: 10vh;
-        font-size: 75px;
+    
+    .lg-heading {
+        margin-top: 4vh;
     }   
 
+    .sm-heading {
+        margin-top: 4vh;
+        
+    }   
     .menu-branding{
         
         .portrait{
