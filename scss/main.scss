@@ -55,6 +55,7 @@ header {
 
 main {
     padding: 4rem;
+    min-height: calc(100vh - 60px);
     //height: 100%;
     //instead, this will  ensure footer is always at the bottom
     
