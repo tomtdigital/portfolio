@@ -61,8 +61,8 @@ main {
             padding: 0.4rem;
 
             &:hover {
-                color: $secondary-color;
-                @include easeOut;
+                color: $tertiary-color;
+                @include easeOutFast;
             }
         }
     }
@@ -123,6 +123,57 @@ main {
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
     }
+}
+
+//Work/Projects
+.projects {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+        width: 100%;
+        border: white 3px solid;
+
+        &:hover {
+            opacity: 0.8;
+            border-color: $tertiary-color;
+            @include easeOutFast;
+        }
+    }
+}
+
+//Button Style (separate to projects in case we want to access this elsewhere)
+.btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin: 0.3rem;
+    cursor: pointer;
+    &:hover {
+        @include easeOutFast;
+    }
+
+}
+
+.btn-dark {
+    @extend .btn;
+    background: darken($primary-color, 10);
+    color: #fff;
+    &:hover {
+        background: $tertiary-color;
+        color: $secondary-color;
+}
+}
+
+.btn-light {
+    @extend .btn;
+    background: lighten($primary-color, 50);
+    color: #000;
+    &:hover {
+        background: $secondary-color;
+        color: $tertiary-color;
+}
 }
 
 #main-footer {

@@ -1,13 +1,19 @@
 //Widescreens
 
 @include mediaXl {
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
 
+    }
 }
 
 //Desktops and Laptops
 
 @include mediaLg {
-    
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
 }
 
 //Tablets and Small Laptops
@@ -39,9 +45,11 @@
         .portrait{
             width: 10em;
             height: 10em;
+            min-height: 10em;
+            min-width: 10em;;
 
             img{
-                transform: translate(-0.5em, 1.5em);
+                transform: translate(-0.6em, 1.2em);
             }
 
         }
@@ -66,7 +74,11 @@
 
         grid-template-columns: 1fr;
     }
-   
+    
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
 }
 
 //Smartphones
@@ -76,4 +88,26 @@
         margin-top: 10vh;
         font-size: 75px;
     }   
+
+    .menu-branding{
+        
+        .portrait{
+        width: 7em;
+        height: 7em;
+        min-height: 5em;
+        min-width: 5em;
+
+        img{
+            transform: translate(-0.9em, 2.1em);
+            width: 140%;
+        }
+
+
+        }
+    }
+
+    .projects {
+    grid-template-columns: repeat(1, 1fr);
+    
+    }
 }

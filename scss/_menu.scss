@@ -95,7 +95,7 @@
             height: 17em;
             transform: rotate(45deg);
             transform-origin: 50% 50%;
-            border-radius: 0.5em;
+            border-radius: 0;
             
             background-color: #acc7d8;
             
@@ -104,12 +104,13 @@
             img{
                 width: 145%;
                 opacity: 1;
-                cursor: pointer;           
+                cursor: pointer; 
+                
             }
         }
 
         .portrait-cont{
-            transform: rotate(-45deg) translate(1.5em, -3em);
+            transform: rotate(-45deg) translate(1.6em, -3.2em);
             background-color: #aacbde;
         }
 
@@ -126,7 +127,7 @@
         }
 
         &.current > a {
-            color: $secondary-color;
+            color: $tertiary-color;
         }
     }
 
@@ -137,7 +138,7 @@
         font-weight: 350;
         color: set-text-color($primary-color);
         text-decoration: none;
-        @include easeOut;
+        @include easeOutFast;
 
         &:hover{
             color: $secondary-color;

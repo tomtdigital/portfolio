@@ -1,11 +1,16 @@
-$primary-color : rgb(52, 56, 58);
-$secondary-color : #f3d52b;
+$primary-color : rgb(67, 87, 111);
+$secondary-color : #eeee27;
+$tertiary-color : #f601f6;
 $show-home-image : true;
 $home-image: url(../img/background1a.jpg);
 $background-opacity : 0.8;
 
 @mixin easeOut {
     transition: all 0.5s ease-out;
+}
+
+@mixin easeOutFast {
+    transition: all 0.3s ease-out;
 }
 
 @mixin background {
@@ -39,6 +44,7 @@ $background-opacity : 0.8;
         @return #fff;
     }
 }
+
 
 //Media Query Mixins
 @mixin mediaSm {
