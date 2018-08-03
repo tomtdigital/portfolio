@@ -8,6 +8,7 @@ const main = document.querySelector('main');
 const navItems = document.querySelectorAll('.nav-item');
 const myName = document.getElementById('my-name');
 
+
 //Set initial state of menu
 
 let showMenu = false;
@@ -16,6 +17,7 @@ menuBtn.addEventListener('click', toggleMenu);
 myName.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
+
     if (!showMenu) {
         menuBtn.classList.add('close');
         menu.classList.add('show');
@@ -39,6 +41,11 @@ function toggleMenu() {
 
     }
 }
+
+
+
+
+//Unused code to put logo on top of portrait
 
 var portrait = document.getElementById("changepic");
     portrait.onmouseenter = function(){

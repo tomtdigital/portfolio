@@ -148,9 +148,12 @@ main {
 
     .bio {
         grid-area: bio;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        p {
+        border: solid 1px $tertiary-color;
+        padding: 1rem;
+        }
     }
-
     .job-1 {
         grid-area: job1;
     }
@@ -167,6 +170,10 @@ main {
         background: lighten($primary-color, 5);
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
+    }
+
+    .job-list{
+            list-style-type: square;
     }
 
     .menu-branding {
@@ -197,7 +204,7 @@ main {
 .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     margin-top: 1rem;
 
@@ -247,11 +254,22 @@ main {
 }
 
 #main-footer {
-    text-align: center;
+    text-align: right;    
     padding: 1rem;
     background: darken($primary-color, 10); 
     color: set-text-color($primary-color);
-    height: 60px;
+    height: 60px;    
+    
+    .footer-contents{
+        display: inline-flex ;
+        align-content: center;
+    }
+
+
+    #logo-foot{
+        width: 1.5rem;
+        margin-right: 0.5rem;
+    }
 }
 
 

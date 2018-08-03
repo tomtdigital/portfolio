@@ -23,6 +23,7 @@
         'job3 job3';
 
         grid-template-columns: repeat(2, 1fr);
+
     }
     
 }
@@ -85,8 +86,14 @@
         'job3';
 
         grid-template-columns: 1fr;
+
+        .job-list{
+            list-style-type: none;
+    }
     }
     
+    
+ 
     .projects {
         grid-template-columns: repeat(2, 1fr);
         
