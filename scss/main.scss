@@ -8,8 +8,8 @@
 }
 
 body {
-    @include background;
     background-color: $primary-color;
+    @include background;
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
@@ -61,6 +61,7 @@ main {
 
     .icons {
         margin-top: 1rem;
+        margin-left: 1rem;
 
         a{
             padding: 0.4rem;
@@ -76,6 +77,7 @@ main {
         overflow: hidden;
         h1 {
             margin-top: 20vh;
+            cursor: pointer;
         }
     }
 
@@ -115,6 +117,12 @@ main {
 
 //About Page
 
+#about {
+    .lg-heading{
+        margin-bottom: 3rem;
+    }
+}
+
 .about-info {
     display: grid;
     grid-template-areas:
@@ -123,7 +131,9 @@ main {
     grid-template-columns: repeat(3, 1fr); 
     grid-gap: 3em;
 
-    
+    .lg-heading{
+        margin-bottom: 4rem;
+    }
     .bioportrait {
         grid-area: bioimg;
         width: 15em;
@@ -132,7 +142,7 @@ main {
 
         .bioimg {
             width: 100%;           
-            border-radius: 0.5em;    
+            border-radius: 0.2em;    
         }
     }
 
@@ -193,14 +203,13 @@ main {
 
     div{
         font-size: 2rem;
-        border: 3px #fff solid;
+        border: 2px $secondary-color solid;
         padding: 1.5rem 2.5rem;
         margin-bottom: 3rem;
         @include easeOutFast;
-
+        
         &:hover {
             padding: 1.8rem 2.8rem;
-            color: #fff;
             span {
                 color: $tertiary-color;
             }

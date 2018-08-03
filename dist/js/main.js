@@ -6,12 +6,14 @@ const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
 const main = document.querySelector('main');
 const navItems = document.querySelectorAll('.nav-item');
+const myName = document.getElementById('my-name');
 
 //Set initial state of menu
 
 let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu);
+myName.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
     if (!showMenu) {

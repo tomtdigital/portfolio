@@ -9,9 +9,11 @@
     .btn-line{
         width: 28px;
         height: 3px;
-        background-color: set-text-color($primary-color);
+        background-color: $secondary-color;
         margin-bottom: 5px;
         @include easeOut
+        
+        
     }
 
     //Rotate into an X with menu lines
