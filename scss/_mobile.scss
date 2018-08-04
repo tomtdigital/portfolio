@@ -87,9 +87,9 @@
 
         grid-template-columns: 1fr;
 
-        .job-list{
-            list-style-type: none;
-    }
+        .job{
+           text-align: left;
+        }
     }
     
     
@@ -183,6 +183,8 @@
         .bio{
             font-size: 1.1rem;
         }
+
+
     }
 
     .projects {
