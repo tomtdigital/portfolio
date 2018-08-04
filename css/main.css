@@ -213,7 +213,8 @@ main {
     padding: 0.5rem;
     border-bottom: #eeee27 5px solid; }
   .about-info .job-list {
-    list-style-type: square; }
+    list-style-type: square;
+    text-align: left; }
   .about-info .menu-branding {
     visibility: hidden; }
 
@@ -323,8 +324,8 @@ main {
   .about-info {
     grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
-    .about-info .job-list {
-      list-style-type: none; }
+    .about-info .job {
+      text-align: left; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .boxes div {
