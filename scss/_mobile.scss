@@ -112,12 +112,34 @@
 
 //Awkward middle phases
 
+//Landscape
+
+@include mediaSmLandscape {
+    #no-pic{
+        .menu-nav{
+            flex-direction: row;
+
+            .nav-item a{
+                font-size: 0.5em;
+                margin: 0.7em;
+            }
+        }
+    }
+}
+
+#home {
+    margin-top: -1em;
+}
+
 @include mediaSmMd{
     
     #no-pic{
         .menu-nav{
             .nav-item{
                 font-size: 3.5em;
+                .logo{
+                    width: 4rem;
+                }
             }
         }
     }
@@ -203,3 +225,6 @@
     }
 
 }
+
+
+
