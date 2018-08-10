@@ -1,7 +1,6 @@
 $primary-color : rgb(67, 87, 111);
 $secondary-color : #eeee27;
 $tertiary-color : #f601f6;
-$show-home-image : true;
 $home-image: url(../img/background1a.jpg);
 $background-opacity : 0.8;
 
@@ -17,7 +16,8 @@ $background-opacity : 0.8;
         &#bg-img {
             background: $home-image;
             background-attachment: fixed;
-            background-size: cover;         
+            background-size: cover;  
+            background-position: center center;      
             
         }
     }
@@ -47,6 +47,7 @@ $background-opacity : 0.8;
         @content;
     }
 }
+
 
 @mixin mediaSmMd2 {
     @media screen and (min-width: 501px) and (max-width: 579px) {
