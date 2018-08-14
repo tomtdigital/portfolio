@@ -104,17 +104,16 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #43576f;
   color: #fff;
-  height: 100%;
+  background-color: #43576f;
+  background: url(../img/background1a.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
   margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
-  body#bg-img {
-    background: url(../img/background1a.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center; }
 
 h1,
 h2,
@@ -128,7 +127,13 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    font-size: 3em;
+    margin-bottom: 1em;
+    padding: 0.2rem 1rem;
+    background: rgba(71, 92, 117, 0.5); }
+  h1.md-heading,
+  h2.md-heading,
+  h3.md-heading {
+    font-size: 2.5em;
     margin-bottom: 1em;
     padding: 0.2rem 1rem;
     background: rgba(71, 92, 117, 0.5); }
@@ -279,6 +284,10 @@ main {
   #main-footer #logo-foot {
     width: 1.5rem;
     margin-right: 0.5rem; }
+  #main-footer.home-foot {
+    position: relative;
+    bottom: 0;
+    width: 100%; }
 
 /*Lets the content load before the media queries*/
 @media screen and (min-width: 1171px) {
@@ -343,14 +352,11 @@ main {
     #no-pic .menu-nav .nav-item a {
       font-size: 0.5em;
       margin: 0.7em; }
-  body#bg-img {
+  body {
     background: url(../img/background1a.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center center; } }
-
-#home {
-  margin-top: -1em; }
 
 @media screen and (min-width: 580px) and (max-width: 768px) {
   #no-pic .menu-nav .nav-item {
@@ -365,14 +371,6 @@ main {
     font-size: 3em; } }
 
 @media screen and (max-width: 500px) {
-  .lg-heading {
-    margin-top: 4vh; }
-  main#home h1 {
-    margin-top: 8vh; }
-  main#home h2 {
-    margin-top: 5vh; }
-  .sm-heading {
-    margin-top: 4vh; }
   .menu-branding .portrait {
     width: 7em;
     height: 7em;

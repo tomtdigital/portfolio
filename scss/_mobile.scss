@@ -139,9 +139,7 @@
     }
     
 
-#home {
-    margin-top: -1em;
-}
+
 
 @include mediaSmMd{
     
@@ -178,24 +176,7 @@
 
 @include mediaSm {
     
-    .lg-heading {
-        margin-top: 4vh;
-    } 
     
-
-    main#home h1 {
-        margin-top: 8vh;
-    }
-
-    main#home h2 {
-        margin-top: 5vh;
-    }
-
-    .sm-heading {
-        margin-top: 4vh;
-        
-    }   
-
     .menu-branding{
         
         .portrait{

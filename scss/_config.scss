@@ -13,13 +13,13 @@ $background-opacity : 0.8;
 }
 
 @mixin background {
-        &#bg-img {
+    
             background: $home-image;
             background-attachment: fixed;
             background-size: cover;  
             background-position: center center;      
             
-        }
+        
     }
 
 //Set Text Colour
