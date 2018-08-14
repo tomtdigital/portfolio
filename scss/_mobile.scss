@@ -38,6 +38,7 @@
         .lg-heading {
             line-height: 1;
             margin-bottom: 1rem;
+            margin-top: 0.5em;
             font-size: 5rem;
 
         }
@@ -176,8 +177,34 @@
 
 @include mediaSm {
     
-    
-    .menu-branding{
+    main {
+        
+        .lg-heading{
+            font-size: 4.5rem;
+        }
+
+        &#home {
+
+            h1 {
+                margin-top: 0.5em;
+                
+                cursor: pointer;
+            }
+
+            h2 {
+                font-size: 2.2rem;
+            }
+    }
+
+    .icons{
+        display: none;
+    }
+
+    .icons-small{
+        display: inline-block;
+    }
+
+    .menu-branding {
         
         .portrait{
         width: 7em;
@@ -194,7 +221,7 @@
         }
     }
 
-    .about-info{
+    .about-info {
         .bio{
             font-size: 1.1rem;
         }
@@ -207,7 +234,10 @@
     
     }
 
-    .boxes{
+    #work-sub{
+        font-size: 1.2rem;
+    }
+    .boxes {
         div{
         font-size: 1rem;
         padding: 1em 2em;
@@ -221,3 +251,4 @@
 
 
 
+}

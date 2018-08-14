@@ -26,6 +26,7 @@ h3 {
         font-size: 6em;
     }
     &.sm-heading {
+        margin-top: 1.5em;
         margin-bottom: 1em;
         padding: 0.2rem 1rem;
         background: rgba(lighten($primary-color, 2),0.5);
@@ -38,7 +39,6 @@ h3 {
         background: rgba(lighten($primary-color, 2),0.5);
     }
 }
-
 
 
 a {
@@ -73,6 +73,23 @@ main {
         margin-top: 1rem;
         margin-left: 1rem;
         margin-bottom: 5em;
+        display: inline-block;
+
+        a{
+            padding: 0.4rem;
+
+            &:hover {
+                color: $tertiary-color;
+                @include easeOutFast;
+            }
+        }
+    }
+
+    .icons-small {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 5em;
+        display: none;
 
         a{
             padding: 0.4rem;
@@ -87,7 +104,7 @@ main {
     &#home {
 
         h1 {
-            margin-top: 20vh;
+            margin-top: 1.5em;
             cursor: pointer;
         }
         
@@ -210,6 +227,10 @@ main {
             border-color: $tertiary-color;
             @include easeOutFast;
         }
+    }
+
+    .item {
+        margin-top: 2em;
     }
 }
 
