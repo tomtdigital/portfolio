@@ -126,14 +126,18 @@
         }
     }
 
-    #bg-img{
-        visibility: visible;
+        body{
+            @include background;
+        }
+       
     }
 
-   
+    @mixin mediaSmPortrait {
+        body{
+            @include background;
+        }
     }
-
-
+    
 
 #home {
     margin-top: -1em;

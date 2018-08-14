@@ -48,6 +48,14 @@ $background-opacity : 0.8;
     }
 }
 
+@mixin mediaSmPortrait {
+    @media screen and (orientation: landscape) and (max-width: 768px) {
+        //simply inserts the content into the MQ
+        @content;
+    }
+}
+
+
 
 @mixin mediaSmMd2 {
     @media screen and (min-width: 501px) and (max-width: 579px) {

@@ -128,7 +128,8 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    margin-bottom: 2em;
+    font-size: 3em;
+    margin-bottom: 1em;
     padding: 0.2rem 1rem;
     background: rgba(71, 92, 117, 0.5); }
 
@@ -152,17 +153,16 @@ main {
   min-height: calc(100vh - 4rem); }
   main .icons {
     margin-top: 1rem;
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    margin-bottom: 5em; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #f601f6;
         transition: all 0.3s ease-out; }
-  main#home {
-    height: 100vh; }
-    main#home h1 {
-      margin-top: 20vh;
-      cursor: pointer; }
+  main#home h1 {
+    margin-top: 20vh;
+    cursor: pointer; }
   main.more-opacity {
     opacity: 0.1;
     transition: all 0.5s ease-out; }
@@ -174,7 +174,8 @@ main {
 
 #no-pic .menu-nav {
   float: right;
-  height: 100vh; }
+  height: 100vh;
+  max-height: 100vh; }
 
 .logo {
   width: 5rem; }
@@ -342,8 +343,11 @@ main {
     #no-pic .menu-nav .nav-item a {
       font-size: 0.5em;
       margin: 0.7em; }
-  #bg-img {
-    visibility: visible; } }
+  body#bg-img {
+    background: url(../img/background1a.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center; } }
 
 #home {
   margin-top: -1em; }
