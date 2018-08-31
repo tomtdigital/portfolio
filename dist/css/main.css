@@ -241,15 +241,33 @@ main {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
-  .projects img {
+  .projects .thumb {
     width: 100%;
     border: white 3px solid; }
-    .projects img:hover {
+    .projects .thumb:hover {
       opacity: 0.8;
       border-color: #f601f6;
       transition: all 0.3s ease-out; }
   .projects .item {
     margin-top: 2em; }
+    .projects .item .svgsmall {
+      width: 1rem; }
+
+.video {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+iframe {
+  width: 30%;
+  height: 250px; }
+
+.design-imgs {
+  margin-top: 1rem;
+  text-align: center; }
+  .design-imgs .page-design {
+    width: 50%;
+    margin-bottom: 3rem; }
 
 .boxes {
   display: flex;
@@ -306,14 +324,22 @@ main {
 /*Lets the content load before the media queries*/
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  main iframe {
+    width: 40%;
+    height: 25em; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .about-info {
     grid-template-areas: 'bioimg bio' 'job1 job1' 'job2 job2'  'job3 job3';
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  main iframe {
+    width: 50%;
+    height: 20em; }
+  .design-imgs .page-design {
+    width: 60%; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -324,6 +350,9 @@ main {
       margin-bottom: 1rem;
       margin-top: 0.5em;
       font-size: 5rem; }
+    main iframe {
+      width: 75%;
+      height: 17em; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -359,7 +388,9 @@ main {
     font-size: 1.5rem;
     padding: 1.2em 2.2em; }
     .boxes div:hover {
-      padding: 1.4em 2.4em; } }
+      padding: 1.4em 2.4em; }
+  .design-imgs .page-design {
+    width: 90%; } }
 
 @media screen and (orientation: landscape) and (max-width: 768px) {
   #no-pic .menu-nav {
@@ -415,4 +446,9 @@ main {
     font-size: 1rem;
     padding: 1em 2em; }
     main .boxes div:hover {
-      padding: 1em 2em; } }
+      padding: 1em 2em; }
+  main iframe {
+    width: 100%;
+    height: 14em; }
+  .design-imgs .page-design {
+    width: 100%; } }

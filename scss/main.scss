@@ -218,7 +218,7 @@ main {
     grid-gap: 0.7rem;
     grid-template-columns: repeat(3, 1fr);
 
-    img {
+    .thumb {
         width: 100%;
         border: white 3px solid;
 
@@ -231,6 +231,35 @@ main {
 
     .item {
         margin-top: 2em;
+
+        .svgsmall{
+            width: 1rem;
+            
+                
+            }
+        }
+    }
+
+
+//Design Pages
+.video{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+iframe {
+    width: 30%;
+    height: 250px;
+}
+
+.design-imgs{
+    margin-top: 1rem;
+    text-align: center;
+
+    .page-design {
+        width: 50%;
+        margin-bottom: 3rem;
     }
 }
 
